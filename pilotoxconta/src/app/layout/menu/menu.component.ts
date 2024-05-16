@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
+
 import { InicioComponent } from '../../paginas/inicio/inicio.component';
 import { AcercaComponent } from '../../paginas/acerca/acerca.component';
 import { PrivacidadeComponent } from '../../paginas/privacidade/privacidade.component';
@@ -8,7 +9,7 @@ import { PrivacidadeComponent } from '../../paginas/privacidade/privacidade.comp
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [RouterModule, InicioComponent, AcercaComponent,  PrivacidadeComponent ],
+  imports: [ RouterModule, RouterLink, RouterLinkActive, InicioComponent, AcercaComponent,  PrivacidadeComponent ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })

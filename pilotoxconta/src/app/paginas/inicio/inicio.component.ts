@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenuComponent } from '../../layout/menu/menu.component';
 import { EliminarComponent } from '../eliminar/eliminar.component';
+import { RodapeComponent } from '../../layout/rodape/rodape.component';
 
 RouterModule
 
@@ -11,7 +12,8 @@ RouterModule
   imports: [
     RouterModule,   
     MenuComponent,
-    EliminarComponent
+    EliminarComponent,
+    RodapeComponent
     
 
   ],

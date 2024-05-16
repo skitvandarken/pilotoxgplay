@@ -3,12 +3,13 @@ import { Router } from '@angular/router';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from '../../layout/menu/menu.component';
+import { RodapeComponent } from '../../layout/rodape/rodape.component';
 
 
 @Component({
   selector: 'app-eliminar',
   standalone: true,
-  imports: [CommonModule, MenuComponent],
+  imports: [CommonModule, MenuComponent, RodapeComponent],
   templateUrl: './eliminar.component.html',
   styleUrl: './eliminar.component.css'
 })
